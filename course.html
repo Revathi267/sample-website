@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;600;700&display=swap"
+        rel="stylesheet">
+    <!--font awesome 4 cdn searched in google and got the below link-->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"> -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!--font awesome 4 icons for icons-->
+                <!--for smaller screens icons are added-->
+                <i class="material-icons" onclick="hideMenu()">close</i>
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="course.html">COURSE</a></li>
+                    <li><a href="blog.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <i class="material-icons" onclick="showMenu()">menu</i>
+        </nav>
+        <h1>Our Courses</h1>
+    </section>
+
+    <!-- Course -->
+    <!-- Course -->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam esse veritatis sequi accusamus tempora totam
+            voluptatibus adipisci, cumque a beatae obcaecati ea, eveniet sed accusantium repellat, provident incidunt
+            quia exercitationem.</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, veniam recusandae. Quidem neque
+                    quasi in ab quia praesentium id cum excepturi! Voluptatibus, laboriosam et! Numquam placeat
+                    accusantium vitae labore velit!</p>
+            </div>
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, veniam recusandae. Quidem neque
+                    quasi in ab quia praesentium id cum excepturi! Voluptatibus, laboriosam et! Numquam placeat
+                    accusantium vitae labore velit!</p>
+            </div>
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, veniam recusandae. Quidem neque
+                    quasi in ab quia praesentium id cum excepturi! Voluptatibus, laboriosam et! Numquam placeat
+                    accusantium vitae labore velit!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Facilities -->
+    <section class="facilities">
+        <h1>Our Facilities</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png">
+                <h3>World Class Library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, magnam dolore quae minus rerum.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png">
+                <h3>Largest playground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, magnam dolore quae minus rerum.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png">
+                <h3>Tasty and healthy food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas, magnam dolore quae minus rerum.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <section class="footer">
+        <h4>About Us</h4>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi hic tempore rerum voluptatem molestias rem<br>
+            quia magni, adipisci vitae eos error quis voluptates odit tenetur voluptatum nesciunt provident impedit
+            itaque.</p>
+        <div class="icons">
+            <i class="material-icons">thumb_up</i>
+            <i class="material-icons">groups</i>
+            <i class="material-icons">eco</i>
+            <i class="material-icons">person</i>
+        </div>
+        <p> Made with <i class="material-icons">favorite</i> by Revathi</p>
+    </section>
+
+    <!-- Javascript for toggle menu -->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+        function hideMenu() {
+            navLinks.style.right = "-200";
+            console.log("clicked")
+        }
+    </script>
+</body>
+
+</html>
